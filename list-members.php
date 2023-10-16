@@ -181,7 +181,7 @@ if (isset($_SESSION['sno']) && isset($_SESSION['user_id']))
                     </a>
                 </li>
                 <li>
-                    <a href="report-gen.?<?php echo time(); ?>">
+                    <a href="report-gen.php?<?php echo time(); ?>">
                         <span class="icon"><i class="fas fa-duotone fa-chart-simple"></i></span> 
                         <span class="item">Report Generation</span>
                     </a>

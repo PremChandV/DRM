@@ -10,21 +10,31 @@ function w3_close() {
     document.getElementById("openNav").style.display = "inline-block";
 } */
 // =========================================================================
+
+//===============================================================================
+// Get references to the elements you need
 var hamburger = document.querySelector(".hamburger");
-hamburger.addEventListener("click", function () {
-  document.querySelector("body").classList.toggle("active");
-})
+var loginButton = document.getElementById("logoutButton");
+var sideNav = document.getElementById("sideNav");
 
-const logoutButton = document.getElementById("logoutButton");
-const sideNav = document.getElementById("sideNav");
+// Function to handle the side menu state
+function toggleSideMenu() {
+    // Toggle the class "active" on the body to show/hide the side menu
+    document.querySelector("body").classList.toggle("active");
 
-// When the side navigation bar is collapsed, set the logout button position to fixed.
-sideNav.addEventListener("collapsed", () => {
-  logoutButton.style.position = "fixed";
-  logoutButton.style.left = "20";
-});
+    // Check if the side menu is open (body has the "active" class)
+    if (document.body.classList.contains("active")) {
+        // Side menu is open, decrease the button's margin-left
+        loginButton.style.marginLeft = "20px"; // Adjust the margin as needed
+    } else {
+        // Side menu is closed, increase the button's margin-left
+        loginButton.style.marginLeft = "70px"; // Adjust the margin as needed
+    }
+}
 
-// When the side navigation bar is expanded, set the logout button position to relative.
-sideNav.addEventListener("expanded", () => {
-  logoutButton.style.position = "relative";
-});
+// Add a click event listener to the hamburger menu icon
+hamburger.addEventListener("click", toggleSideMenu);
+
+
+
+

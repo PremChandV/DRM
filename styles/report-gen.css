@@ -23,6 +23,7 @@ body {
   top: 0;
   width: 100%;
   height: 15%;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4)
 }
 
 /* Navigation Bar Left Part Styles*/

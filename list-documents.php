@@ -39,7 +39,7 @@ if (isset($_SESSION['sno']) && isset($_SESSION['user_id']))
             </div>
             <!-- Actual Body Container -->
             <div class="main-body-container">
-            <div class="add-btn"><a href="add-document.php" type="button">Add Member</a></div>
+            <div class="add-btn"><a href="add-document.php" type="button">Add Document</a></div>
                 <table class="table">
                     <tr>
                         <th>Sl No.</th>

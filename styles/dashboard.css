@@ -21,7 +21,7 @@ body {
   grid-template-columns: auto auto;
   overflow: hidden;
   background-color: rgb(5, 67, 105);
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 100%;
   height: 15%;
@@ -55,13 +55,15 @@ body {
   font-weight: 600;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 0px;
-  margin: 30px 15px 0px 35px;
+  margin: 29px 0px 0px 0px;
 }
 
 /* Logout Button Styles */
-.navbar a button {
-  /* float: right; */
-  /* display: block; */
+.navbar h1 > a > button {
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px 0px 0px 928px;
+  /*  */
   font-size: 16px;
   font-weight: bold;
   color: black;
@@ -69,19 +71,38 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 12px 25px;
-  margin-left: 60%;
-  margin-block-end: auto;
+  /* margin-left: 60%; */
   position:fixed;
   cursor: pointer;
   border: 2px solid black;
   border-radius: 5px;
 }
 
+/* .navbar a button {
+  /* float: right; *
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background-color: bisque;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 25px;
+  /* margin-left: 60%; *
+  position:fixed;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 5px;
+} */
+
 /* Logout Button background on mouse-over */
-.navbar a button:hover {
+.navbar h1 > a > button:hover {
   background: #ddd;
   color: black;
 }
+
+/* .navbar-heading {
+  display: flex;
+} */
 
 /* Main Section Styles */
 .main .section {
@@ -92,7 +113,7 @@ body {
 
 /* Main Body Container Styles */
 .main .section .main-body-container {
-  margin: 150px 30px 30px 30px;
+  margin: 30px 30px 30px 30px;
   background: rgb(241, 241, 241);
   padding: 50px;
   line-height: 28px;
